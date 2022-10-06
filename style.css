@@ -188,6 +188,94 @@ body
         color: #4F5665;
         margin-bottom: 15px;
     }
+
+    .pricing
+    {
+        padding: 80 0;
+    }
+
+    .pricing-content
+    {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+
+    .pricing-h2
+    {
+        text-align: center;
+        color: #0B132A;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .pricing-p
+    {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #4F5665;
+        margin-bottom: 60px;
+    }
+
+    .pricing-plans
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 170px;
+        gap: 50px;
+    }
+
+    .plan
+    {
+        padding: 60px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .plan-check-text
+    {
+        display: none;
+    }
+
+    .plan-name
+    {
+        display: none;
+    }
+
+    .plan-cost
+    {
+        margin-top: 130px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #0B132A;
+        margin-bottom: 10px;
+    }
+
+    .plan-button
+    {
+        width: 178px;
+        height: 45px;
+        border: 1px solid #F53855;
+        border-radius: 50px;
+        color: #F53855;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (min-width: 600px)
@@ -212,24 +300,7 @@ body
 
     .header-content
     {
-        max-width: 1500px;
-        margin: 0 auto;
-        padding: 20px;
-        display: flex;
-        align-items: center;
         justify-content: space-between;
-    }
-
-    .logo
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
     }
 
     .tabs
@@ -524,6 +595,19 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .plan-check-text
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #4F5665;
+        margin-bottom: 15px;
     }
 
     .three-bars
