@@ -125,12 +125,10 @@ body
 
     .main-priorities
     {
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        max-width: 150px;
+        margin: 50px auto;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        align-items: flex-start;
         flex-direction: column;
         gap: 40px;
     }
@@ -142,6 +140,24 @@ body
         justify-content: center;
         gap: 36px;
     }
+
+    .p-h4-text
+    {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #0B132A;
+    }
+
+    .p-p-text
+    {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4F5665;
+    }
     
     .features-illustr
     {
@@ -151,7 +167,7 @@ body
     .features-content
     {
         padding: 20px;
-        margin-bottom: 80px;    
+        margin-bottom: 30px;    
         gap: 150px;
     }
 
@@ -175,6 +191,15 @@ body
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 50px;    
+    }
+
+    .check-content
+    {
+        margin: 0 auto;
+        max-width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .check-text
@@ -280,14 +305,12 @@ body
 
 @media (min-width: 600px)
 {
-    .main-illustr
-    {
-        display: block;
-    }
-
     .main-priorities
     {
         flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .plan-name
@@ -303,9 +326,13 @@ body
         margin-bottom: 30px;
     }
 
+    .pricing-plans
+    {
+        flex-direction: row;
+    }
 }
 
-@media (min-width: 1000px)
+@media (min-width: 1300px)
 {
     .header
     {
@@ -381,12 +408,8 @@ body
 
     .main-h2
     {
-        color: #0B132A;
-        font-style: normal;
-        font-weight: 500;
         font-size: 50px;
-        line-height: 70px;
-        margin-bottom: 20px;
+        text-align: left;
     }
 
     .main-span
@@ -396,40 +419,24 @@ body
 
     .main-p
     {
-        color: #4F5665;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        margin-bottom: 50px;
+        text-align: left;
+    }
+    
+    .main-illustr
+    {
+        display: block;
     }
 
     .main-button
     {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 25px;
-        border-radius: 10px;
-        background-color: #F53855;
         width: 250px;
         height: 60px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .button-blur
     {
-        position: relative;
-        top: -30px;
-        left: 20px;
-        width: 210px;
-        height: 60px;
-        background: rgba(245, 56, 56, 0.35);
-        filter: blur(27px);
-        border-radius: 10px;
+        width: 230px;
+        top: -40px;
     }
 
     .main-priorities
@@ -451,39 +458,25 @@ body
         gap: 36px;
     }
 
-    .p-h4-text
-    {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 30px;
-        color: #0B132A;
-    }
-
-    .p-p-text
-    {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: #4F5665;
-    }
 
     .features
     {
         padding: 80 0;
     }
 
+    .features-illustr
+    {
+        display: block;
+    }
+
     .features-content
     {
-        padding: 20px;
         margin: 0 auto;
         max-width: 1500px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 80px;    
-        gap: 150px;
+        margin-bottom: 80px;
     }
 
     .features-h2
@@ -565,19 +558,18 @@ body
 
     .plan
     {
-        padding: 100px 75px;
-        height: 760px;
-        height: 33%;
+        padding: 100px 75px 100px 75px;
+        height: 850px;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .plan-cost
     {
-        margin-top: 130px;
+        margin: 0;
         font-style: normal;
         font-weight: 500;
         font-size: 25px;
@@ -610,6 +602,12 @@ body
         line-height: 30px;
         color: #4F5665;
         margin-bottom: 15px;
+    }
+
+    .plan-button-wrapper
+    {
+        position: absolute;
+        top: 2300px;
     }
 
     .three-bars
