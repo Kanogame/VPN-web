@@ -289,6 +289,20 @@ body
     {
         flex-direction: row;
     }
+
+    .plan-name
+    {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0B132A;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (min-width: 1000px)
@@ -559,18 +573,6 @@ body
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .plan-name
-    {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        color: #0B132A;
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 
     .plan-cost
