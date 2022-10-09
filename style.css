@@ -301,6 +301,16 @@ body
         justify-content: center;
         align-items: center;
     }
+
+    .pricing
+    {
+        margin-bottom: 50px;
+    }
+
+    .network
+    {
+        display: none;
+    }
 }
 
 @media (min-width: 600px)
@@ -515,6 +525,7 @@ body
     .pricing
     {
         padding: 80 0;
+        margin-bottom: 100px;
     }
 
     .pricing-content
@@ -522,6 +533,8 @@ body
         padding: 20px;
         margin: 0 auto;
         max-width: 1500px;
+        display: flex;
+        flex-direction: column;
     }
 
     .pricing-h2
@@ -608,6 +621,16 @@ body
     {
         position: absolute;
         top: 2300px;
+    }
+    
+    .network
+    {
+        display: block;
+    }
+
+    .net-globe
+    {
+        margin: 0 auto;
     }
 
     .three-bars
