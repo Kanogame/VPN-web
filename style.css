@@ -342,7 +342,7 @@ body
     }
 }
 
-@media (min-width: 1300px)
+@media (min-width: 1100px)
 {
     .header
     {
@@ -546,6 +546,7 @@ body
         text-align: center;
         color: #0B132A;
         margin-bottom: 20px;
+        margin-top: auto;
     }
 
     .pricing-p
@@ -571,7 +572,7 @@ body
 
     .plan
     {
-        padding: 100px 75px 100px 75px;
+        padding: 80px 75px;
         height: 850px;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
@@ -604,6 +605,11 @@ body
         align-items: center;
     }
 
+    .plan-button-wrapper
+    {
+        margin-top: auto;
+    }
+
     .plan-check-text
     {
         display: flex;
@@ -615,12 +621,6 @@ body
         line-height: 30px;
         color: #4F5665;
         margin-bottom: 15px;
-    }
-
-    .plan-button-wrapper
-    {
-        position: absolute;
-        top: 2300px;
     }
     
     .network
@@ -636,5 +636,77 @@ body
     .three-bars
     {
         display: none;
+    }
+
+    .comments
+    {
+        display: flex;      
+        margin: 0 auto;
+        padding: 60px;
+        gap: 50px;
+    }
+
+    .user-comment
+    {
+        width: 400px;
+        height: 230px;
+        background: #FFFFFF;
+        border: 2px solid #F53838;
+        border-radius: 10px;
+    }
+
+    .comment-header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px;
+    }
+
+    .user-data
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .user-star
+    {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .name
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .location
+    {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #4F5665;
+    }
+
+    .comment-text
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #0B132A; 
+    }
+
+    .pages
+    {
+        
     }
 }
