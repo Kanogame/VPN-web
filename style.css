@@ -10,10 +10,10 @@ html {
 
 body
 {
-    margin: 0;
+    margin: 10px;
 }
 
-@media (min-width: 200px)
+@media (min-width: 100px)
 {
 
     .header-content
@@ -221,7 +221,6 @@ body
 
     .pricing-content
     {
-        padding: 20px;
         margin: 0 auto;
         max-width: 1500px;
     }
@@ -477,7 +476,15 @@ body
     }
 }
 
-@media (min-width: 600px)
+@media (min-width: 300px)
+{
+    .pricing-content
+    {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 400px)
 {
     .main-priorities
     {
@@ -500,6 +507,14 @@ body
         margin-bottom: 30px;
     }
 
+    .pricing-plans
+    {
+        flex-direction: column;
+    }
+}
+
+@media  (min-width: 850px)
+{
     .pricing-plans
     {
         flex-direction: row;
