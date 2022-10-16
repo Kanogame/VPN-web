@@ -104,6 +104,13 @@ body
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .main-button:hover
+    {
+        width: 75%;
+        height: 65px;
     }
 
     .button-blur
@@ -265,6 +272,13 @@ body
         display: flex;
         flex-direction: column;
         justify-content: center;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .plan:hover
+    {
+        padding: 80px;
+        border-color: #F53855;
     }
 
     .plan-check-text
@@ -299,6 +313,14 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .plan-button:hover
+    {
+        width: 190px;
+        color: white;
+        background-color: #F53855;
     }
 
     .pricing
@@ -548,6 +570,29 @@ body
         font-size: 16px;
         line-height: 19px;
         color: #4F5665;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .tabs-text:after
+    {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #F53855;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }    
+    
+    .tabs-text:hover:after
+    {
+        transform: scaleX(1);
+        transform-origin: bottom left;    
     }
 
     .sign
@@ -620,6 +665,11 @@ body
     {
         width: 250px;
         height: 60px;
+    }
+
+    .main-button:hover
+    {
+        width: 260px;
     }
 
     .button-blur
@@ -699,6 +749,27 @@ body
         line-height: 30px;
         color: #4F5665;
         margin-bottom: 15px;
+        position: relative;
+    }
+
+    .check-text:after
+    {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #4F5665;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }    
+    
+    .check-text:hover:after
+    {
+        transform: scaleX(1);
+        transform-origin: bottom left;    
     }
 
     .pricing
@@ -835,54 +906,11 @@ body
         gap: 20px;
     }
 
-    .subcribe
-    {
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        top: -80px;
-    }
-
-    .sub-container
-    {
-        background: white;
-        border-radius: 10px;
-        z-index: 100px;
-        padding: 60px 70px;
-        max-width: 1140px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-        border: 2px solid #F53838;
-    }
-
-    .sub-h2
-    {
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 45px;  
-        color: #0B132A;
-    }
-
-    .sub-p
-    {
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #4F5665;
-    }
-
     .bottom-header
     {
-        padding-top: 180px;
-        padding-bottom: 100px;
-        background-color: #F8F8F8;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f3f3f3;
         position: relative;
     }
 
@@ -969,5 +997,65 @@ body
         font-size: 16px;
         line-height: 30px;
         color: #4F5665;
+    }
+}
+
+@media (min-width: 1700px)
+{
+    
+    .subcribe
+    {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -80px;
+    }
+    
+    .sub-container
+    {
+        background: white;
+        border-radius: 10px;
+        z-index: 100px;
+        padding: 60px 70px;
+        max-width: 1140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        border: 2px solid #d3d3d3;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .sub-container:hover
+    {
+        max-width: 1300px;
+        border: 2px solid #F53838;
+        top: -90px;
+    }
+    
+    .sub-h2
+    {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 45px;  
+        color: #0B132A;
+    }
+
+    .sub-p
+    {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #4F5665;
+    }
+
+    .bottom-header
+    {
+        padding-top: 180px;
     }
 }
