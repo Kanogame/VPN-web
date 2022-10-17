@@ -254,78 +254,19 @@ body
         margin-bottom: 60px;
     }
 
-    .pricing-plans
+    .pricing
     {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 0 170px;
-        gap: 50px;
+        margin-bottom: 50px;
     }
 
     .plan
     {
-        padding: 60px;
-        border: 2px solid #DDDDDD;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: 0.3s all ease-in-out;
-    }
-
-    .plan:hover
-    {
-        padding: 80px;
-        border-color: #F53855;
-    }
-
-    .plan-check-text
-    {
         display: none;
     }
 
-    .plan-name
+    #alt-plan
     {
-        display: none;
-    }
-
-    .plan-cost
-    {
-        margin-top: 130px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
-        color: #0B132A;
-        margin-bottom: 10px;
-    }
-
-    .plan-button
-    {
-        width: 178px;
-        height: 45px;
-        border: 1px solid #F53855;
-        border-radius: 50px;
-        color: #F53855;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.2s all ease-in-out;
-    }
-
-    .plan-button:hover
-    {
-        width: 190px;
-        color: white;
-        background-color: #F53855;
-    }
-
-    .pricing
-    {
-        margin-bottom: 50px;
+        display: block;
     }
 
     .network
@@ -504,9 +445,83 @@ body
     {
         padding: 20px;
     }
+
+    .pricing-plans
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 170px;
+        gap: 50px;
+    }
+
+    #alt-plan
+    {
+        display: none;
+    }
+
+    .plan
+    {
+        padding: 60px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .plan:hover
+    {
+        padding: 80px;
+        border-color: #F53855;
+    }
+
+    .plan-check-text
+    {
+        display: none;
+    }
+
+    .plan-name
+    {
+        display: none;
+    }
+
+    .plan-cost
+    {
+        margin-top: 130px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #0B132A;
+        margin-bottom: 10px;
+    }
+
+    .plan-button
+    {
+        width: 178px;
+        height: 45px;
+        border: 1px solid #F53855;
+        border-radius: 50px;
+        color: #F53855;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .plan-button:hover
+    {
+        width: 190px;
+        color: white;
+        background-color: #F53855;
+    }
 }
 
-@media (min-width: 400px)
+@media (min-width: 600px)
 {
     .main-priorities
     {
@@ -997,6 +1012,28 @@ body
         font-size: 16px;
         line-height: 30px;
         color: #4F5665;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .other-p:after
+    {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #4F5665;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }    
+    
+    .other-p:hover:after
+    {
+        transform: scaleX(1);
+        transform-origin: bottom left;   
     }
 }
 
