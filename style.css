@@ -10,7 +10,7 @@ html {
 
 body
 {
-    margin: 10px;
+    margin: 0;
 }
 
 @media (min-width: 100px)
@@ -36,6 +36,7 @@ body
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
+        cursor: pointer;
     }
 
     .sign
@@ -91,7 +92,6 @@ body
 
     .main-button
     {
-        font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 25px;
@@ -105,6 +105,7 @@ body
         align-items: center;
         justify-content: center;
         transition: 0.2s all ease-in-out;
+        cursor: pointer;
     }
 
     .main-button:hover
@@ -274,6 +275,11 @@ body
         display: none;
     }
 
+    .trust
+    {
+        display: none;
+    }
+
     .comments
     {
         display: flex;  
@@ -281,17 +287,15 @@ body
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        padding: 60px;
         gap: 50px;
     }
 
     .user-comment
     {
-        width: 400px;
-        height: 230px;
         background: #FFFFFF;
         border: 2px solid #F53838;
         border-radius: 10px;
+        padding: 5px;
     }
 
     .comment-header
@@ -452,7 +456,6 @@ body
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 0 170px;
         gap: 50px;
     }
 
@@ -511,13 +514,24 @@ body
         justify-content: center;
         align-items: center;
         transition: 0.2s all ease-in-out;
+        cursor: pointer;
     }
 
     .plan-button:hover
     {
-        width: 190px;
         color: white;
         background-color: #F53855;
+    }
+
+    .trust
+    {
+        display: block;
+    }
+
+    .user-comment
+    {
+        width: 400px;
+        height: 230px;
     }
 }
 
@@ -597,7 +611,7 @@ body
         width: 100%;
         transform: scaleX(0);
         height: 2px;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         background-color: #F53855;
         transform-origin: bottom right;
@@ -625,6 +639,12 @@ body
     .sign-in
     {
         color: #0B132A;
+        cursor: pointer;
+    }
+
+    .sign-in:hover
+    {
+        color: #5f5f5f;
     }
 
     .sign-up
@@ -637,6 +657,14 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .sign-up:hover
+    {
+        color: white;
+        background-color: #F53855;
     }
 
     .main
@@ -906,6 +934,9 @@ body
     .comments
     {
         flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 60px;
+        padding-bottom:60px;
     }
 
     .pages
@@ -919,6 +950,11 @@ body
         align-items: center;
         justify-content: center;
         gap: 20px;
+    }
+
+    .back-next-img
+    {
+        cursor: pointer;
     }
 
     .bottom-header
@@ -1014,6 +1050,7 @@ body
         color: #4F5665;
         position: relative;
         cursor: pointer;
+        text-decoration: none;
     }
 
     .other-p:after
